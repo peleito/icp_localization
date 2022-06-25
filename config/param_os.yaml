@@ -1,0 +1,33 @@
+icp_localization:
+  initial_pose:
+    x: 0.0 
+    y: 0 
+    z: 0.35 
+    roll: 0.0  # degrees  
+    pitch: 0.0 # degrees
+    yaw: 135.0  # degrees
+  imu_data_topic: "/os_cloud_node/imu/data" 
+  # odometry_data_topic: "/odometry/estimate" 
+  num_accumulated_range_data: 1
+  range_data_topic: "/os_cloud_node/points" 
+  is_use_odometry: false
+  is_provide_odom_frame: true
+  gravity_vector_filter_time_constant: 0.01
+  fixed_frame: "map"
+  # min_num_odom_msgs_before_ready: 5
+
+calibration:
+  imu_to_range_sensor:
+    x: 0.006253
+    y: -0.011775
+    z: 0.007645
+    roll: 0
+    pitch: 0
+    yaw: 0
+  # odometry_source_to_range_sensor:
+  #   x: 0
+  #   y: 0
+  #   z: 0
+  #   roll: 0
+  #   pitch: 0
+  #   yaw: 0 

@@ -1,0 +1,20 @@
+# these filters get applied to the scans from the range sensor every time a scan is received
+- DistanceLimitDataPointsFilter:
+    dim: -1 # -1 means radial distance, 0 is x, 1 is y, 2 is z
+    dist: 10
+    removeInside: 0
+- DistanceLimitDataPointsFilter:
+    dim: -1 # -1 means radial distance, 0 is x, 1 is y, 2 is z
+    dist: 0.25 
+    removeInside: 1
+- RandomSamplingDataPointsFilter:
+    prob: 1
+- SurfaceNormalDataPointsFilter:
+    knn: 18
+    epsilon: 0.1
+    keepNormals: 1
+    keepDensities: 1
+- ObservationDirectionDataPointsFilter
+- OrientNormalsDataPointsFilter 
+- MaxDensityDataPointsFilter:
+    maxDensity: 10000.0

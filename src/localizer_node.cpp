@@ -58,6 +58,7 @@ int main(int argc, char **argv)
 
 
   publishCloud(mapCloud, cloudPub, icp.getFixedFrame());
+  // publishCloud(mapCloud, cloudPub, "map");
 
   ros::AsyncSpinner spinner(3);
   spinner.start();
