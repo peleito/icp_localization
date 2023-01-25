@@ -2,10 +2,10 @@ icp_localization:
   initial_pose:
     x: 0.0 
     y: 0 
-    z: 0.35 
+    z: 0 
     roll: 0.0  # degrees  
     pitch: 0.0 # degrees
-    yaw: 135.0  # degrees
+    yaw: 0  # degrees
   imu_data_topic: "/os_cloud_node/imu/data" 
   # odometry_data_topic: "/odometry/estimate" 
   num_accumulated_range_data: 1

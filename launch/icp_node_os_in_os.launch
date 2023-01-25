@@ -13,7 +13,7 @@
 		default="$(find icp_localization)/config/$(arg input_filters_config_name)" />
 
 	 <!-- <arg name="pcd_filename" default="mach_room.pcd" />  -->
-	 <arg name="pcd_filename" default="machine_room_dense.pcd" /> 
+	 <arg name="pcd_filename" default="coarse.pcd" /> 
 	 <arg name="pcd_filepath" 
 		default="$(find icp_localization)/data/$(arg pcd_filename)" /> 
 
